@@ -12,6 +12,8 @@ And the response type is json format defined Bitbucket API.
 - Bitbucket API v2.0 <https://developer.atlassian.com/bitbucket/api/2/reference/resource/>
 - Swagger for API v2.0 <https://api.bitbucket.org/swagger.json>
 
+Note: Added very limited support to Enterprise v1.0 API specifically in the projects.go file
+
 ## Install
 
 ```sh
@@ -26,7 +28,7 @@ package main
 import (
         "fmt"
 
-        "github.com/ktrysmt/go-bitbucket" 
+        "github.com/Ramkrao/go-bitbucket" 
 )
 
 func main() {
@@ -102,3 +104,7 @@ make test
 ## Author
 
 [ktrysmt](https://github.com/ktrysmt)
+
+## Contributors
+
+[Ramkrao](https://github.com/Ramkrao)
