@@ -17,7 +17,7 @@ Note: Added very limited support to Enterprise v1.0 API specifically in the proj
 ## Install
 
 ```sh
-go get github.com/ktrysmt/go-bitbucket
+go get github.com/Ramkrao/go-bitbucket
 ```
 
 ## Usage
