@@ -24,7 +24,9 @@ type Repository struct {
 	Full_name   string
 	Description string
 	ForkPolicy  string
+	Language    string
 	Type        string
+	IsPrivate   bool `json:"is_private"`
 	Owner       map[string]interface{}
 	Links       map[string]interface{}
 }

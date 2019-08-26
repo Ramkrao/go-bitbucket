@@ -1,6 +1,7 @@
 package bitbucket
 
 import (
+	"encoding/json"
 	"errors"
 
 	"github.com/mitchellh/mapstructure"
@@ -64,6 +65,10 @@ func decodeRepositorys(reposResponse interface{}) (*RepositoriesRes, error) {
 	reposResponseMap, ok := reposResponse.(map[string]interface{})
 	if !ok {
 		return nil, errors.New("Not a valid format")
+		err := json.Unmarshal(reposResponse.([]byte), &reposResponseMap)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	repoArray := reposResponseMap["values"].([]interface{})

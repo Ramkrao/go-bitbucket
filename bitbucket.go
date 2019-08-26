@@ -99,8 +99,10 @@ type teams interface {
 }
 
 type RepositoriesOptions struct {
-	Owner string `json:"owner"`
-	Role  string `json:"role"` // role=[owner|admin|contributor|member]
+	Owner   string `json:"owner"`
+	Role    string `json:"role"` // role=[owner|admin|contributor|member]
+	Project string `json:"project"`
+	Limit   string `json:"limit"`
 }
 
 type RepositoryOptions struct {
